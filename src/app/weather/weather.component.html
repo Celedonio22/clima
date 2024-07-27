@@ -1,2 +1,5 @@
-<p>El estado del tiempo en "Matlapa" es:</p>
-<p>La temperatura actual es:</p>
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search">
+<button (click)="onSearch()">Search</button>
+<p>El estado del tiempo actual en {{locationName}} es {{weatherCondition}}</p>
+<p>La temperatura actual es: {{temp}}</p>
+<button (click)="switchUnit()">Cambiar unidad</button>
