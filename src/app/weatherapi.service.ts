@@ -27,7 +27,7 @@ export class WeatherapiService {
   constructor(private http: HttpClient){
   }
   getWeather(place: string): Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(`https://api.weatherapi.com/v1/current.json?q=${place}&lang=ES&key=`);
+    return this.http.get<ApiResponse>(`https://api.weatherapi.com/v1/current.json?q=${place}&lang=ES&key=your-apikey-here`);
   }
 
 }
